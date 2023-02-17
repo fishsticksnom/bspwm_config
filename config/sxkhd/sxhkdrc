@@ -1,0 +1,67 @@
+# Logout
+alt + shift + e
+    bspc quit
+
+# Quit/restart bspwm
+alt + shift + r
+    notify-send "bspwm has been reloaded" -i ~/Pictures/Wallpapers/bspwm.png; \
+    bspc wm -r
+
+# Reload functions
+alt + shift + s
+   notify-send "sxhkd has been reloaded" -i ~/Pictures/Wallpapers/sxkhd.png; \
+   pkill -USR1 -x sxhkd
+
+# rofi
+alt + d
+   rofi -combi-modi drun#run -theme style_2 -show combi
+
+# kitty
+alt + Return
+    kitty
+
+# Wifi
+alt + shift + w
+    ~/.config/polybar/scripts/wifi.sh
+
+# Close node
+alt + q
+    bspc node -c
+
+# Brightness
+F5
+    brightnessctl set 10-
+F6
+    brightnessctl set +10
+
+# Sleep
+F12
+   systemctl suspend
+
+# Screenshot
+alt + shift + p
+    ~/.config/sxhkd/scripts/screenshot.sh
+
+# Focus the node in the given direction
+alt + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+
+# Swap the current node and the biggest window
+alt + g
+    bspc node -s biggest.window
+
+# Set the window state
+alt + {t,s,f}
+    bspc node -t {tiled,floating,fullscreen}
+
+# Move a floating window
+alt + {Left,Down,Up,Right}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Focus or send to the given desktop
+ctrl + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Desktops Navigation
+alt + {_,+ }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
