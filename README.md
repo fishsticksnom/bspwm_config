@@ -36,7 +36,7 @@ Note: The install script is made for Ubuntu or Debian.
 **Clone this repo**
 
 ```bash
-git clone 
+git clone https://github.com/fishsticksnom/bspwm-config.git
 ```
 
 ```bash
