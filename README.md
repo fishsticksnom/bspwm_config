@@ -20,7 +20,7 @@
 | polybar       | Status Bar          | 
 | rofi          | Application Launcher| 
 | scrot         | Screen Capture      | 
-| sxkhd         | Key Deamon          | 
+| sxhkd         | Key Deamon          | 
 | catppuccin    | Color Scheme        |
 
 </div>
@@ -49,11 +49,11 @@ cd bspwm-config
 
 
 ``` bash
-chmod 644 config/sxkhd/sxhkdrc
+chmod 644 config/sxhkd/sxhkdrc
 chmod 755 config/bspwm/bspwmrc
 chmod +x config/polybar/launch.sh
 chmod +x config/polybar/scripts/wifi.sh
-chmod +x config/sxkhd/scripts/screenshot.sh
+chmod +x config/sxhkd/scripts/screenshot.sh
 chmod +x install.sh
 ./install.sh
 ````
@@ -78,7 +78,7 @@ fc-cache
 
 **Wallpapers directory**
 
-The wallpaper directory contains 3 images, the wallpaper, and 2 more images this images are use with dunst, everytime that bspwm or sxkhd configurations are reload an image will be display using dunst.
+The wallpaper directory contains 3 images, the wallpaper, and 2 more images this images are use with dunst, everytime that bspwm or sxhkd configurations are reload an image will be display using dunst.
 
 ```bash
 cp Wallpapers /home/your_username_here/Pictures/
