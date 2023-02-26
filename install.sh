@@ -2,9 +2,10 @@
 
 sudo apt update
 sudo apt upgrade
+
 sudo apt install bspwm
 sudo apt install dunst
-sudo apt install dunst
+sudo apt install feh
 sudo apt install kitty
 sudo apt install picom
 sudo apt install polybar
