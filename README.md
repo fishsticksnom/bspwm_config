@@ -14,6 +14,7 @@
 | :---          |    :----:           | 
 | bspwm         | Windows Manager     | 
 | dunst         | Notification Deamon | 
+| feh           | Wallpaper Manager   |
 | font          | Iosevka Nerd Font   | 
 | kitty         | Terminal            | 
 | picom         | Compositor          | 
@@ -71,6 +72,7 @@ cp -r config/ /home/your_username_here/.config/
 **Fonts**
 
 ```bash
+mkdir ./local/share/fonts
 cp -r fonts/ /home/your_username_here/.local/share/fonts/
 fc-cache
 ```
@@ -96,6 +98,10 @@ Now you know where all the config files are, now is time customize them accordin
 
 ALT + Shift + W
 
+
+**Rofi**
+
+ALT + D
 
 **Screenshot**
 
