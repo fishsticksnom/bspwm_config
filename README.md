@@ -72,7 +72,7 @@ cp -r config/ /home/your_username_here/.config/
 **Fonts**
 
 ```bash
-mkdir ./local/share/fonts
+mkdir ~/./local/share/fonts
 cp -r fonts/ /home/your_username_here/.local/share/fonts/
 fc-cache
 ```
