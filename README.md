@@ -66,14 +66,14 @@ chmod +x install.sh
 All the directories need to be move into your /home/your_username_here/.config directory.
 
 ```bash
-cp -r config/ /home/your_username_here/.config/
+cp -r config/ ~/.config/
 ```
 
 **Fonts**
 
 ```bash
 mkdir ~/./local/share/fonts
-cp -r fonts/ /home/your_username_here/.local/share/fonts/
+cp -r fonts/ ~/.local/share/fonts/
 fc-cache
 ```
 
@@ -83,7 +83,7 @@ fc-cache
 The wallpaper directory contains 3 images, the wallpaper, and 2 more images this images are use with dunst, everytime that bspwm or sxhkd configurations are reload an image will be display using dunst.
 
 ```bash
-cp Wallpapers /home/your_username_here/Pictures/
+cp Wallpapers ~/Pictures/
 ```
 
 
